@@ -1,0 +1,23 @@
+[
+  {
+    "name":"beforeMethod",
+    "className":"com.ezhomesixgod.aop.StartTimeBeforeMethod"
+  },
+  {
+    "name":"afterMethod",
+    "className":"com.ezhomesixgod.aop.EndTimeAfterMethod"
+  },
+  {
+    "name":"testService",
+    "className":"com.ezhomesixgod.aop.TestService"
+  },
+  {
+    "name":"testServiceProxy",
+    "className":"com.ezhomesixgod.aop.core.ProxyFactoryBean",
+    "target":"testService",
+    "interceptorNames":[
+      "beforeMethod",
+      "afterMethod"
+    ]
+  }
+]
